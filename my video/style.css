@@ -32,6 +32,10 @@ section{
 
 }
 
+h2{
+    width: 50%;
+}
+
 h3{
     color: red;
 }
