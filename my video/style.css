@@ -7,11 +7,12 @@
 
 body{
     text-align: center;
+    width: 100%;
   
 }
 
 section{
-    width: 100%;
+    width: 90%;
     padding: 0;
     height: 78px;
     background-color: black;
@@ -20,17 +21,6 @@ section{
    
 }
 
-.btn{
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-    background-color: black;
-    border: none;
-}
-
-#logo{
-    margin-bottom: 0;
-}
 
 .container{
     width: 100%;
@@ -67,7 +57,7 @@ h4{
 }
 
 .vid{
-    width:100%;
+    width:90%;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
