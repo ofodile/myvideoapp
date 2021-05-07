@@ -144,12 +144,12 @@ h3{
 
 column{
        background-color: white;
-       Border:0;
+       Margin:0;
    }
 
    .row{
        background-color: white;
-       Border: 0;
+       Margin: 0;
    }
 
 @media only screen and (min-width: 600px) {
