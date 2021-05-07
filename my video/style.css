@@ -87,8 +87,13 @@ h4{
     color: rgb(218, 25, 25);
     font-size: 20px;
 }
+.row > a{
+    text-decoration: none;
+    color: rgb(218, 25, 25);
+    font-size: 15px;
+}
 .related{
-    width: 95%;
+    width: 100%;
     height: 200px;
     margin-top:40px;
 }
@@ -135,27 +140,31 @@ h3{
 }
 
 @media only screen and (min-width: 600px) {
-   body{ 
-       max-width: 100%;
-       
-   }
 
-   .container{
-       margin: 30px;
-       padding: 20px;
-       margin-right: 100px;
-    
-    
-   }
-
-   .iframe{
-       width: 70%;
-   }
+    .container{
+        width: 70%;
+    }
 
    .related{
        width: 80%;
-       height: 200px;
-       
+       height: 250px;
+   }
+
+   .iframe{
+       width: 60%;
+   }
+
+   .column{
+       width: 100%;
+       background-color: white;
+       display: flex;
+   }
+
+   .row{
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: white;
    }
 
 }
@@ -307,5 +316,20 @@ a {
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+    .column{
+        width: 100%;
+        background-color: white;
+        display: flex;
+    }
+ 
+    .row{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
     }
 }
