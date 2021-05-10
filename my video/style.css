@@ -39,8 +39,9 @@ body{
 
 }
 
-h2{
-    width: 50%;
+.vid >h2{
+    width: 60%;
+    Font-size:20px;
 }
 
 h3{
