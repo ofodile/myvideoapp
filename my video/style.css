@@ -17,8 +17,6 @@ body{
     height: 65px;
     background-color: black;
     margin-bottom: 10px;
-   
-   
 }
 
 #logo{
@@ -39,9 +37,8 @@ body{
 
 }
 
-.vid >h2{
-    width: 60%;
-    Font-size:20px;
+h2{
+    width: 100%;
 }
 
 h3{
@@ -73,6 +70,11 @@ h4{
     margin-bottom: 50px;
     background-color: white;
 }
+.vid>h4{
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+}
 .ads{
     width: 95%;
     height: 400px;
@@ -91,16 +93,13 @@ h4{
 .row > a{
     text-decoration: none;
     color: rgb(218, 25, 25);
-    font-size: 20px;
-    border: none;
-    Width:80%;
+    font-size: 15px;
+    padding: 0;
 }
 .related{
     width: 100%;
     height: 200px;
     margin-top:40px;
-    Background-color: white;
-    border: none;
 }
 
 .iframe{
@@ -108,6 +107,28 @@ h4{
     height: 300px;
     border: none;   
 }
+section{
+    background-color: white;
+    display: flex;
+}
+
+section >a>button{
+    font-size: 15px;
+    background-color: rgb(218, 25, 25);
+    margin: 10px;
+    color: white;
+    padding: 5px;
+    border: 1px solid rgb(218, 25, 25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section>a{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer{
     width: 100%;
     height: 50px;
@@ -134,25 +155,9 @@ h3{
     font-size: 20px;
 }
 
-.links{
-    width: 100%;
-    border: 2px solid black;
+.row{
+    background-color: white;
 }
-
-.inner>a{
-    width: 35%;
-    display: flex;
-}
-
-column{
-       background-color: white;
-       Margin:0;
-   }
-
-   .row{
-       background-color: white;
-       Margin: 0;
-   }
 
 @media only screen and (min-width: 600px) {
 
@@ -181,157 +186,8 @@ column{
        margin-right: auto;
        background-color: white;
    }
-
+   section{
+    background-color: white;
+    display: inline;
 }
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navbar>a>b{
-  background-color: black;
-  color: white;
-  font-size: 30px;
-}
-
-li {
-    list-style: none;
-}
-
-li>a{
-  background-color: black;
-}
-
-
-
-a {
-    text-decoration: none;
-}
-
-.header{
-    border-bottom: 1px solid #E2E8F0;
-    border-bottom: 2px solid gray;
-    margin-bottom: 10px;
-    position: sticky;
-    top: 0;
-    
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    background-color: black;
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item {
-    padding: 10px;
-    background-color: black;
-}
-
-.nav-item>a{
-  color: white;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-}
-
-.nav-link:hover{
-    color: #482ff7;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
-
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    li>a{
-  background-color: white;
-}
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-    .nav-item {
-    padding: 0;
-    background-color: black;
-}
-.nav-item>a{
-  color: red;
-}
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-
 }
